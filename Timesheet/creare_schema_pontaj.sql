@@ -123,12 +123,7 @@ CREATE TABLE calendar (
   reason          VARCHAR2(100),
   CONSTRAINT uq_emp_date UNIQUE (employee_id, calendar_date)
 );
--- Tabela: locations
-CREATE TABLE locations (
-  location_id   NUMBER PRIMARY KEY,
-  country       VARCHAR2(100) NOT NULL,
-  country_id    VARCHAR2(10) UNIQUE
-);
+
 
 -- Modificare tabel: departments → adăugare locație
 ALTER TABLE departments
@@ -417,8 +412,6 @@ CREATE INDEX idx_status_ts ON timesheets(status);
 CREATE INDEX idx_phase_ts ON timesheets(project_phase);
 CREATE INDEX idx_work_date_ts ON timesheets(work_date);
 
-SET SERVEROUTPUT ON
-ALTER SESSION SET NLS_TERRITORY = 'AMERICA';
 
 BEGIN
   generate_calendar_for_employee(4);
