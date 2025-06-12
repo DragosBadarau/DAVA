@@ -179,6 +179,51 @@ INSERT INTO employees (employee_id, first_name, last_name, email, hire_date, job
 VALUES (6, 'Mihai', 'Georgescu', 'mihai.georgescu@example.com', SYSDATE, 'DEV', 10);
 
 -- Inserare zile libere adiționale pentru România
+
+-- 1 Ianuarie – Anul Nou
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (1, TO_DATE('2025-01-01', 'YYYY-MM-DD'), 'Anul Nou', 'RO');
+
+-- 2 Ianuarie – A doua zi de An Nou
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (2, TO_DATE('2025-01-02', 'YYYY-MM-DD'), 'A doua zi de An Nou', 'RO');
+
+-- 6 Ianuarie – Boboteaza
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (3, TO_DATE('2025-01-06', 'YYYY-MM-DD'), 'Boboteaza', 'RO');
+
+-- 7 Ianuarie – Sf. Ioan
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (4, TO_DATE('2025-01-07', 'YYYY-MM-DD'), 'Sf. Ioan', 'RO');
+
+-- 20 Aprilie – Paște Ortodox (2025)
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (5, TO_DATE('2025-04-20', 'YYYY-MM-DD'), 'Paște Ortodox', 'RO');
+
+-- 21 Aprilie – A doua zi de Paște
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (6, TO_DATE('2025-04-21', 'YYYY-MM-DD'), 'A doua zi de Paște', 'RO');
+
+-- 1 Mai – Ziua Muncii
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (16, TO_DATE('2025-05-01', 'YYYY-MM-DD'), 'Ziua Muncii', 'RO');
+
+-- 15 August – Adormirea Maicii Domnului
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (17, TO_DATE('2025-08-15', 'YYYY-MM-DD'), 'Sf. Maria (Adormirea)', 'RO');
+
+-- 1 Decembrie – Ziua Națională a României
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (18, TO_DATE('2025-12-01', 'YYYY-MM-DD'), 'Ziua Națională a României', 'RO');
+
+-- 25 Decembrie – Crăciunul
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (19, TO_DATE('2025-12-25', 'YYYY-MM-DD'), 'Crăciunul', 'RO');
+
+-- 26 Decembrie – A doua zi de Crăciun
+INSERT INTO free_days (free_day_id, free_date, description, country_id)
+VALUES (20, TO_DATE('2025-12-26', 'YYYY-MM-DD'), 'A doua zi de Crăciun', 'RO');
+
 INSERT INTO free_days (free_day_id, free_date, description, country_id)
 VALUES (7, TO_DATE('2025-06-01', 'YYYY-MM-DD'), 'Ziua Copilului', 'RO');
 
