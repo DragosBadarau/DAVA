@@ -2,9 +2,10 @@
 Autor: Dragos Badarau
 Livrare: Scripturi SQL + View-uri + Date + Documentatie
 
-## 📁 Conținut livrabil
+## Conținut 
 
-- `creare_schema_pontaj.sql`: crearea tuturor tabelelor (timesheets, employees, etc.)
+** `creare_schema_pontaj.sql` ** : crearea tuturor tabelelor (timesheets, employees, etc.) + continutul fisierelor urmatoare : 
+
 - `insert_timesheets_employee1.sql`: pontaje demo pentru employee_id = 1
 - `insert_3_employees_timesheets.sql`: alți 3 angajați + timesheets
 - `free_days_ro_uk.sql`: sărbători legale România și UK
@@ -14,7 +15,7 @@ Livrare: Scripturi SQL + View-uri + Date + Documentatie
 - `materialized_view_ore_proiect.sql`: materialized view cu total ore per proiect + fază
 - `selecturi_left_join_si_analitica.sql`: interogări cu LEFT JOIN și funcții analitice
 
-## 🧪 Ordinea recomandată de rulare
+## Ordinea recomandată de rulare
 
 1. `creare_schema_pontaj.sql`
 2. `locations_si_legaturi.sql`
@@ -37,7 +38,7 @@ Livrare: Scripturi SQL + View-uri + Date + Documentatie
 9. `materialized_view_ore_proiect.sql`
 10. `selecturi_left_join_si_analitica.sql`
 
-## ✅ Cerințe acoperite
+## Cerințe acoperite
 
 - toate tipurile de constrainturi
 - date semistructurate (JSON în `timesheets`)
